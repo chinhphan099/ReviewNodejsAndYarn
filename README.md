@@ -8,3 +8,6 @@
   -"nodemon": "node index"
 ### RUN
   - yarn nodemon
+
+### Note
+  - Mặc định lệnh webpack sẽ mặc định build file index.js trong src vào thư mục dist
