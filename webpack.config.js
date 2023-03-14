@@ -20,6 +20,25 @@ module.exports = (env) => {
         {
           test: /\.s[ac]ss|css$/,
           use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+        },
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: [
+                [
+                  '@babel/preset-env',
+                  {
+                    debug: true,
+                    useBuitIns: 'usage', // nên sử dụng entry, rồi trong code tự import những polyfill cần sử dụng để không load những polyfill ko cần thiết
+                    corejs: '3.29.1'
+                  }
+                ]
+              ]
+            }
+          }
         }
       ]
     },
