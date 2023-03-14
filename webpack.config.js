@@ -28,5 +28,15 @@ module.exports = {
       filename: 'index.html',
       template: 'src/template.html'
     })
-  ]
+  ],
+  devServer: {
+    static: {
+      directory: 'dist'
+    },
+    port: 3000,
+    open: true,
+    hot: true,
+    compress: true,
+    historyApiFallback: true
+  }
 }
