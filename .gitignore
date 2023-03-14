@@ -7,4 +7,4 @@ npm-debug.log
 ._*
 Thumbs.db
 node_modules
-public
+dist
