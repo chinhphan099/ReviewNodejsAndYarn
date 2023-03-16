@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'SVN-NexaBold';
+  src: url('../fonts/SVN-NexaBold.woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'SVN-NexaLight';
+  src: url('../fonts/SVN-NexaLight.woff');
+  font-weight: 300;
+}
 body {
   background-color: red;
+  font-family: 'SVN-NexaLight';
 }
